@@ -12,5 +12,5 @@ game.settings = {
     gameTimer: 60000,
 }
 
-//reserve some keyboard variables
+// reserve keyboard vars
 let keyF, keyLEFT, keyRIGHT;
