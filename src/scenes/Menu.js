@@ -27,12 +27,12 @@ class Menu extends Phaser.Scene {
         let centerY = game.config.height/2;
         let textSpacer = 64;
         
-        this.add.text(centerX, centerY - textSpacer, 'ROCKET PATROL MOD', menuConfig).setOrigin(0.5);
-        this.add.text(centerX, centerY, 'P1 Use ← →, arrows to move & C to Fire', menuConfig).setOrigin(0.5);
-        this.add.text(centerX, centerY + textSpacer, 'P2 Use \'a\' \'d\', keys to move & ENTER to Fire', menuConfig).setOrigin(0.5);
+        this.add.text(centerX, centerY - textSpacer*1.5, 'ROCKET PATROL MOD', menuConfig).setOrigin(0.5);
+        this.add.text(centerX, centerY - textSpacer*0.5, 'P1 Use ← →, arrows to move & C to Fire', menuConfig).setOrigin(0.5);
+        this.add.text(centerX, centerY + textSpacer*0.5, 'P2 Use \'a\' \'d\', keys to move & ENTER to Fire', menuConfig).setOrigin(0.5);
         menuConfig.backgroundColor = '#00FF00';
         menuConfig.color = '#000';
-        this.add.text(centerX, centerY + textSpacer + textSpacer, 'Press ← for Easy or → for Hard', menuConfig).setOrigin(0.5)
+        this.add.text(centerX, centerY + textSpacer*1.5, 'Press ← for Easy or → for Hard', menuConfig).setOrigin(0.5)
 
         keyLEFT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.LEFT);
         keyRIGHT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);

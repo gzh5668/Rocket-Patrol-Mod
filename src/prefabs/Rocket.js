@@ -14,7 +14,7 @@ class Rocket extends Phaser.GameObjects.Sprite {
 
     deicder() {
         if (this.p1mark) {
-            return 430;
+            return 431;
         } else {
             return 110;
         }

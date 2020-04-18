@@ -36,7 +36,7 @@ class Play extends Phaser.Scene {
         keyRIGHT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
 
         //add rocket (p1) //setscale used to shrink sprite
-        this.p1Rocket = new Rocket(this, game.config.width/2 - 8, 430, 'rocket', 0, keyF, keyLEFT, keyRIGHT, true).setScale(0.5, 0.5).setOrigin(0, 0);
+        this.p1Rocket = new Rocket(this, game.config.width/2 - 8, 431, 'rocket', 0, keyF, keyLEFT, keyRIGHT, true).setScale(0.5, 0.5).setOrigin(0, 0);
 
         // p2 keys
         keyF = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.C);
