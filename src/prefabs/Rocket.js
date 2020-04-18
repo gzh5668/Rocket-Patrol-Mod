@@ -14,7 +14,7 @@ class Rocket extends Phaser.GameObjects.Sprite {
 
     deicder() {
         if (this.p1mark) {
-            return 431;
+            return 430;
         } else {
             return 110;
         }
@@ -31,8 +31,7 @@ class Rocket extends Phaser.GameObjects.Sprite {
         }
         // fire button
         if (Phaser.Input.Keyboard.JustDown(this.fireKey)) {
-            this.isFiring = true;
-            this.sfxRocket.play();
+            this.isFiring = true; 
             if (this.y == this.deicder()) {
                 this.sfxRocket.play();
             }
