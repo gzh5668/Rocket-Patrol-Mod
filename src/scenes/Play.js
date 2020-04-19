@@ -17,13 +17,11 @@ class Play extends Phaser.Scene {
         this.starfield = this.add.tileSprite(0, 0, 640, 480, 'starfield').setOrigin(0,0);
 
         // white rectangle borders
-        this.add.rectangle(5, 5, 630, 32, 0xFFFFFF).setOrigin(0, 0);
-        this.add.rectangle(5, 443, 630, 32, 0xFFFFFF).setOrigin(0, 0);
-        this.add.rectangle(5, 5, 20, 455, 0xFFFFFF).setOrigin(0, 0);
-        this.add.rectangle(615, 5, 20, 455, 0xFFFFFF).setOrigin(0, 0);
+        this.add.rectangle(5, 91, 630, 15, 0xFFFFFF).setOrigin(0, 0);
+        this.add.rectangle(5, 443, 630, 15, 0xFFFFFF).setOrigin(0, 0);
 
         //green UI background
-        this.add.rectangle(30, 42, 580, 64, 0x00FF00).setOrigin(0, 0);
+        //this.add.rectangle(50, 42, 540, 64, 0x00CC00).setOrigin(0, 0);
 
         // add spaceship (x3)
         this.ship01 = new Spaceship(this, game.config.width + 192, 182, 'spaceship', 0, 10).setOrigin(0, 0);
@@ -66,10 +64,10 @@ class Play extends Phaser.Scene {
             },
             fixedWidth: 100,
         }
-        this.scoreLeft = this.add.text(69, 54,  this.p1Rocket.score, scoreConfig);
-        this.scoreRight = this.add.text(469, 54, this.p2Rocket.score, scoreConfig);
-        this.add.text(69, 63, 'p1');
-        this.add.text(469, 63, 'p2');
+        this.scoreLeft = this.add.text(69, 27,  this.p1Rocket.score, scoreConfig);
+        this.scoreRight = this.add.text(469, 27, this.p2Rocket.score, scoreConfig);
+        this.add.text(69, 26, 'p1');
+        this.add.text(469, 26, 'p2');
 
         this.gameOver = false;
         // 60 second play clock
@@ -92,7 +90,7 @@ class Play extends Phaser.Scene {
             this.scene.start("menuScene");
         }
         // scroll starfield
-        this.starfield.tilePositionX -= 4;
+        this.starfield.tilePositionX -= 1;
 
         if (!this.gameOver) {
             this.p1Rocket.update();
