@@ -1,3 +1,4 @@
+// Name: Zihan Guo
 // Implement a simultaneous two-player mode (50)
 // Redesign the game's artwork, UI, and sound to change its theme/aesthetic (to something other than sci-fi) (50)
 let config = {
